@@ -9,6 +9,13 @@
 
 <template>
     <div>
+        <h3>Menu</h3>
+        <div>
+            <NuxtLink to="/homepage">Home</NuxtLink> <br>
+            <NuxtLink to="/ambientes">Ambientes</NuxtLink> <br>
+            <NuxtLink to="/cargos">Cargos</NuxtLink> <br>
+            <NuxtLink to="/tarefas">Tarefas</NuxtLink> <br>
+        </div>
         <h1>Tarefa: {{ tarefas.data.id }}</h1>
         <h4> <strong>Nome: </strong> {{ tarefas.data.nome }} | </h4>
         <h4> <strong>Status: </strong>{{ tarefas.data.idStatusFK.nome }} | </h4>
